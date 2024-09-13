@@ -1,0 +1,147 @@
+1. git config --global user.name "User_Name"
+
+Used to set up git name in the config file of git.
+
+-> git config --global user.name		To check the user name
+
+2. git config --global user.email "abcd@gmail.com"
+
+Used to set up git email in the config file of git.
+
+-> git config --global user.email		To check the user email
+
+
+3. git config --global --edit
+
+Used to see the username and useremail and directly set or edit them.
+
+To git out from the window :- esc :wq!
+
+4. mkdir 	(make directory)
+
+Used to create a new FOLDER in the current directory
+
+5. cd		(change directory)
+
+Used to change the current directory
+
+6. git init		
+
+Used to make the current folder GIT Repo.
+
+7. ls 
+
+Used to show the list of files and folders present in that directory
+
+8. ls -a 
+
+Used to check the .git file inside the GIT Repo folder
+
+9. git status
+
+Used to tell where and what are the changes that have been made in the GIT Repo
+
+
+				  WORKING DIRECTORY -------->git add--------> STAGING AREA------------>git commit-------------->REPOSITORY
+
+
+10.  git add File_name.xyz
+
+Used to add the files to Staging Area
+
+
+11. git commit -m "description of the changes that youve made"		(-m represents the message or the description of the commit)
+
+Used to save the data that you've changed in the file
+
+
+12. git log
+
+Used to see the number of commit that have been done and description about it
+
+
+13. git add .  		(. is used here)
+
+Used to add all the files to the staging area
+
+
+14. git checkout HASHCODE
+
+Used to switch to any commit in the past using their hashcode 
+
+
+Concept of Branch :- Branches basically are the committed codes. The master branch consists of all the committed code and when we used a particular branch which contain only one initial commit(for example) then this initial committed code will run parallel and the master branch code will run differently. The initial commit code will also be in both the branch but work differently according to the code. 
+
+git checkout hashcode
+git branch				{To make the branch of the hashcode}
+
+
+git checkout master      	{To switch back to the master branch where all the committed files exist}
+
+git branch branch_name    {To create a new Branch with a new Name}
+
+
+git merge branch_name  		{To merge the branch (branch_name) with the branch with is checkedin rightnow}
+
+
+
+
+
+
+
+
+git checkout --theirs <conflicted_file>		{Used to accept the incoming change from the branch we are merging from}
+
+
+
+git checkout --ours <conflicted_file>		{Used to accept the current change from the branch we are merging to(the branch that is checkedin rightnow)}
+
+
+15. touch .gitignore		
+
+Used to create a .gitignore folder which just ignores the files whose names with their extensions are stored inside it. Make sure to put .gitignore inside it too.
+
+
+16.
+…or push an existing repository from the command line
+1. git remote add origin https://github.com/Mohit-7777/Lets-Learn-Git.git				{We can put anything in the place of origin }
+2. git branch -M main																{main is the branch you want to push}
+3. git push -u origin main															{main is the branch name like the master branch}
+
+origin and main is only need to be entered one time.... 
+
+
+later we can directly write
+
+git push
+
+
+16.1  To store other branch we can first checkin that branch and then type
+
+git push -u origin dev
+
+
+17. git remote -v
+
+Used to provide the fetch and push origins only after you paste the "git remote add origin from you GitHub repo"
+
+
+
+
+FORK : - Fork is used to clone a repo to your github
+
+
+
+18. git clone <repo url>
+
+To clone a repo.
+
+
+Vim is a text editor that you can use from the command line. It's known for its efficiency and powerful features once you get the hang of it.
+
+To enter insert mode (where you can type text): Press i or a.
+To exit insert mode and return to normal mode: Press Esc.
+To save changes and exit Vim: Type :wq and press Enter.
+To exit Vim without saving changes: Type :q! and press Enter.
+To save changes without exiting: Type :w and press Enter.
+To move around: Use arrow keys or h, j, k, l for left, down, up, and right respectively.
